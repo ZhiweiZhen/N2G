@@ -29,10 +29,7 @@
 * [gog_driver.py](gog_driver.py): gog driver file
 * [gnnUtils.py](gnnUtils.py): GNN and GoG utilities file, it contains helper functions
 
-### Run
-* update the `config.yaml` with the hyper-paramter that you want
-* to run: `sudo python3 gnn_driver.py gnn -c config.yaml`
-* to run: `sudo python3 gog_driver.py gog -c config.yaml`
+
 
 ### Outputs
 
