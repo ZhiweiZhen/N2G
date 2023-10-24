@@ -1,0 +1,16 @@
+data: MUTAG
+distanceType: vertex_edge
+threshold: 0.50
+datasetPath: './Downloads/Graph_to_Graphs-main/data/'
+graphType: homo # homo or hetero
+nnType: gat # gcn, gat and sage
+numLayers: 3 # number of layers
+numHeads: 1 # only used for gat
+aggregationType: mean # only used for GraphSAGE
+hiddenFeatureSize: 32 # hidden feature size
+epochs: 1000
+lossRate: 0.001
+weightDecay: 0.000001
+batchSize: 128
+trainTestSplit: 0.8
+device: cuda
