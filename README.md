@@ -27,4 +27,4 @@ Then we use the quantile threshold to generate the unweighted 0-1 adjacent matri
 For tge feature matrix we have 7 features: average degree centrality, betweenness centrality, closeness centrality, eigenvector centrality, current flow betweenness cen-trality, subgraph centrality, and current flow closeness centrality.
 
 Add seps about how to generate distance matrix in tud_benchamrk.
-Plese see graph_to_node.py file.
+Plese see '/data_converter/graph_to_node_dgl.py' file.
