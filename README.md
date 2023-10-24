@@ -9,10 +9,10 @@
 
 Implementation of N2G method for GCN, GAT and GRAPHSAGE.
 
-To run each method, go to each directionary and run running.py file, for example
+To run each method, go to 'DGL/GoG' and run gog_driver.py file, for example
 
 ```
-python GAT_GOG/running.py
+!python3 gog_driver.py gog -c config.yaml
 ```
 
 In each method, the folder 'data' contains
