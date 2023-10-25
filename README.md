@@ -9,7 +9,7 @@
 
 Implementation of N2G method for GCN, GAT and GRAPHSAGE.
 
-To run each method, go to 'DGL/GoG' and run gog_driver.py file, for example
+To run each method, go to 'DGL_N2G' and run gog_driver.py file, for example
 
 ```
 !python3 gog_driver.py gog -c config.yaml
@@ -25,3 +25,7 @@ For the distance matrix, we have a $N \times N$ matrix whose values are pairwise
 For each N2G, we have 7 features: average degree centrality, betweenness centrality, closeness centrality, eigenvector centrality, current flow betweenness cen-trality, subgraph centrality, and current flow closeness centrality.
 
 Regarding how to generate distance matrix in tud_benchamrk, please refer to '/data_converter/graph_to_node_dgl.py' file.
+
+Regarding corrupted labels, there are 2 kinds of corrupted labels : (i) Uniformly corrupted and (ii) Biased corrupted labels. 
+The corruption type and rate can be adjusted in 'config.yaml' file in DGL_N2G folder
+
