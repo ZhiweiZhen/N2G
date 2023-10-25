@@ -12,7 +12,7 @@ from nn_type.gat import KLayerGAT
 from nn_type.sage import KLayerSAGE
 
 sys.path.append('../')
-from DGL_GoG.dataloader.gog_dataset import GoGDataset
+from DGL_N2G.dataloader.gog_dataset import GoGDataset
 from gnnUtils import visualize_graph, printDatasetStats, train_GoG
 
 # set up logging variables
@@ -87,6 +87,8 @@ def main():
 
         train_test_split = config['trainTestSplit']
         device = config['device']
+        corruption = config['corruption']
+        cor_type = config['type']
 
         if nn_type == 'gat':
             num_heads = config['numHeads']
@@ -100,9 +102,9 @@ def main():
         f'weighted decay:{weight_decay} split:{train_test_split}')
 
     data = GoGDataset(data_name, dataset_path, distance_type, threshold,
-                      train_test_split, log)
+                      train_test_split,cor_type,corruption, log)
     graph = data[0]
-    visualize_graph(graph)
+    #visualize_graph(graph)
 
     graph = graph.to(device)
 
