@@ -25,7 +25,6 @@
     * [gcn.py](nn_types/gcn.py) - graph convolution network for homogeneous & heterogenous graph
     * [sage.py](nn_types/sage.py) - GraphSAGE network for homogeneous graph
 * [config.yaml](config.yaml): configuration file
-* [gnn_driver.py](gnn_driver.py): gnn driver file
 * [gog_driver.py](gog_driver.py): gog driver file
 * [gnnUtils.py](gnnUtils.py): GNN and GoG utilities file, it contains helper functions
 
