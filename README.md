@@ -5,7 +5,7 @@
 > formatter and the attached pre-commit hook. You can do this by running
 > `pip install pre-commit (https://pypi.org/project/pre-commit/) and pre-commit install` in your command line inside the repository.
 > If your development environemnt is in Windows, you may need to add
-> `C:\Users\NAME\AppData\Local\Programs\Python\PythonXXX\Scripts` to your PATH.
+> `C:\Users\...\Python\PythonXXX\Scripts` to your PATH.
 
 Implementation of N2G method for GCN, GAT and GRAPHSAGE.
 
