@@ -2,7 +2,7 @@
 
 > **_NOTE:_**
 > If you intend on working in the N2G repo, please make sure you have installed the yapf python
-> formatter & attached a git pre-commit hook. You can do this (very) easily by running
+> formatter & attached a git pre-commit hook. You can do this by running
 > `pip install pre-commit && pre-commit install` in your command line inside the repo.
 > If your development environemnt is in Windows, you may need to add
 > `C:\Users\NAME\AppData\Local\Programs\Python\PythonXXX\Scripts` to your PATH.
