@@ -8,6 +8,7 @@ numLayers: 3 # number of layers
 numHeads: 1 # only used for gat
 aggregationType: mean # only used for GraphSAGE
 hiddenFeatureSize: 32 # hidden feature size
+type: 'uniform' # 'uniform' and 'bias'
 epochs: 1000
 lossRate: 0.001
 weightDecay: 0.000001
@@ -15,4 +16,4 @@ batchSize: 128
 trainTestSplit: 0.8
 device: cuda
 corruption: 0.1
-type: 'uniform'
+
