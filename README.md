@@ -20,7 +20,7 @@ In each method, the folder 'data' contains
 2. Feature matrix
 3. Class label
 
-For distance matrix, we have a n*n matrix whose values are pairwise distance for n graphs. Here we have lambda distance, deltance0 distance and vertex-edge overlop distance.
+For distance matrix, we have a $N \times N$ matrix whose values are pairwise distance for n graphs. Here we have lambda distance, deltance0 distance and vertex-edge overlop distance.
 
 Then we use the quantile threshold to generate the unweighted 0-1 adjacent matrix.
 
