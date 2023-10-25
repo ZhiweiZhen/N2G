@@ -15,14 +15,12 @@ To run each method, go to 'DGL/GoG' and run gog_driver.py file, for example
 !python3 gog_driver.py gog -c config.yaml
 ```
 
-In each method, the folder 'data' contains
-1. Differnent distance matrix generated using netcomp
-2. Feature matrix
-3. Class label
+For each method, the folder 'data' contains
+1. Different distance matrices generated using n2gnetcomp;
+2. Feature matrix;
+3. Class label.
 
-For distance matrix, we have a $N \times N$ matrix whose values are pairwise distance for n graphs. Here we have lambda distance, deltance0 distance and vertex-edge overlop distance.
-
-Then we use the quantile threshold to generate the unweighted 0-1 adjacent matrix.
+For the distance matrix, we have a $N \times N$ matrix whose values are pairwise distance for n graphs. Here we consider using lambda distance, deltance0 distance and vertex-edge overlop distance. Afer that, we use the quantile threshold to generate the corresponding unweighted adjacent matrix.
 
 For each N2G, we have 7 features: average degree centrality, betweenness centrality, closeness centrality, eigenvector centrality, current flow betweenness cen-trality, subgraph centrality, and current flow closeness centrality.
 
