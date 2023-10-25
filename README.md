@@ -26,6 +26,5 @@ For each N2G, we have 7 features: average degree centrality, betweenness central
 
 Regarding how to generate distance matrix in tud_benchamrk, please refer to '/data_converter/graph_to_node_dgl.py' file.
 
-Regarding corrupted labels, there are 2 kinds of corrupted labels : (i) Uniformly corrupted and (ii) Biased corrupted labels. 
-The corruption type and rate can be adjusted in 'config.yaml' file in DGL_N2G folder
+Regarding corrupted labels, there are 2 kinds of corrupted labels : (i) Uniformly corrupted and (ii) Biased corrupted labels. The type and rate of corruption can be found in 'config.yaml' file in DGL_N2G folder.
 
