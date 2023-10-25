@@ -11,14 +11,15 @@ class GoGDataset(DGLDataset):
     def name(self):
         return self._name
 
-    def __init__(self, name, path, distance_type, threshold, split, log=None):
+    def __init__(self, name, path, distance_type, threshold, split, cor_type,corruption,log=None):
         self.name = name
         self.path = Path(path)
         self.distance_type = distance_type
         self.threshold = threshold
         self.split = split
         self.log = log
-
+        self.cor_type = cor_type
+        self.corruption = corruption
         super(GoGDataset, self).__init__(name=name)
 
     def process(self):
@@ -74,9 +75,13 @@ class GoGDataset(DGLDataset):
         index = np.where(train_mask==True)
         np.random.shuffle(index)
         #print(labels[index]==0)
-        index_bias= np.where(labels[index]==0)
-        index_bias = index_bias[:int(len(index)*0.2)]
-        #labels[index_bias] = 1- labels[index_bias]
+        if self.cor_type == 'uniform':
+        	index_bias = index
+        elif self.cor_type == 'bias':
+        	index_bias = np.where(labels[index]==0)
+        
+        index_bias = index_bias[:int(len(index)*self.corruption)]
+        labels[index_bias] = 1- labels[index_bias]
        
         self.graph.ndata['label'] = labels
         self.num_classes = torch.tensor(
